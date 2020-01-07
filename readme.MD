@@ -1,15 +1,6 @@
----
-title: ELK+KAFKA+FILEBEAT构建企业级应用
-date: 2020-01-04 09:48:49
-tags:
- - Elasticsearch
-categories:
- - Elasticsearch
-typora-root-url: ./
----
 
 ELK是一个应用套件，由**Elasticsearch**、**Logstash**和**Kibana**三部分组件组成，简称ELK。它是一套开源免费、功能强大的日志分析管理系统。ELK可以将我们的系统日志、网站日志、应用系统日志等各种日志进行收集、过滤、清洗，然后进行集中存放并可用于实时检索、分析。
-<!--more-->
+
 为了保证ELK收集日志的安全性和稳定性，此架构引入了消息队列机制，采用**KAFKA**集群实现消息队列。并在前端使用**Filebeat**收集日志，有效降低了收集日志对业务系统资源的消耗。
 
 **架构**
